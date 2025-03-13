@@ -132,7 +132,7 @@ int main() {
     std::mt19937 gen(rd());
     std::uniform_int_distribution<int> dist(INT_MIN, INT_MAX);
 
-    std::vector<int> v(10000000);
+    std::vector<int> v(1000);
     for (int& num : v) {
         num = dist(gen); // Random numbers in the full integer range
     }
